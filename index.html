@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Drag-Drop</title>
+
+    <!-- styles  -->
+    <link
+      rel="shortcut icon"
+      href="assets/imgs/kxp_fav.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="todo-container">
+      <form id="add-form">
+        <input type="text" placeholder="New TODO....." id="todo-input" />
+        <button type="submit" id="todo-btn">ADD+</button>
+      </form>
+
+      <div class="boxes-container">
+        <div class="box" id="to-do">
+          <h3 class="heading">TODO</h3>
+
+          <p class="task" draggable="true">Study math</p>
+          <p class="task" draggable="true">Playing football</p>
+          <p class="task" draggable="true">Playing pubg</p>
+        </div>
+
+        <div class="box" id="doing">
+          <h3 class="heading">DOING</h3>
+
+          <p class="task" draggable="true">Watching a movie</p>
+        </div>
+
+        <div class="box" id="done">
+          <h3 class="heading">DONE</h3>
+
+          <p class="task" draggable="true">Stadying physics</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- link JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
